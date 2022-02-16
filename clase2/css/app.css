@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Raleway:wght@300;400&display=swap');
+*{ /* reset */
+    margin: 0px; padding: 0px; box-sizing: border-box;
+}
+body{
+    font-family: Nunito, sans-serif;
+    font-weight: 300;
+    color: #444;
+    background-color: #e2efdf;
+    width: 800px;
+    margin: auto;
+    padding: 80px 24px;
+}
+
+#caja{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+}
