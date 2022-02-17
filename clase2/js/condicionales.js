@@ -10,10 +10,11 @@
  */
 
 //let numero = prompt('Ingrese un número');
-let numero= parseInt( prompt('ingrese un número') );
+let numero = parseInt( prompt('ingrese un número') );
 
 if ( numero < 100 ) {
-    document.write("el numero es menor que 100")
+    document.write("el numero es menor que 100");
 }else{
-    document.write("el numero NO es menor que 100")
+    document.write("el numero NO es menor que 100");
 }
+
