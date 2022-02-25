@@ -19,6 +19,12 @@ body{
     padding: 25px;
     border-radius: 10px;
 }
+    input[type="text"]{
+        padding: 10px;
+        width: 140px;
+        margin: 3px;
+    }
+
     #txt{
         height: 46px;
         width: 300px;
