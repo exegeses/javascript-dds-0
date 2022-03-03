@@ -5,6 +5,7 @@
 body{
     font-family: Nunito, sans-serif;
     font-weight: 300;
+    font-size: 2em;
     color: #444;
     background-color: #e2efdf;
     width: 800px;
@@ -18,4 +19,8 @@ body{
     background-color: #ccc;
     position: relative;
     top:100px;
+}
+.separador{
+    width: 3px;
+    display: inline-block;
 }

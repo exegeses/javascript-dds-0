@@ -22,16 +22,15 @@ function clock()
 
     //obtenemos los segundos
     let segundos = fecha.getSeconds();
-    if ( segundos < 10 ){
-        segundos = '0'+ segundos
-    }
+    segundos = dosDigitos( segundos );
 
     //imprimimos texto dentro del span
     //txt.innerText = horas +':'+ minutos +':'+ segundos;
     txtHoras.innerText = horas;
     txtMinutos.innerText = minutos;
     txtSegundos.innerText = segundos;
-
+    separador[0].innerText = blinker(segundos);
+    separador[1].innerText = blinker(segundos);
 
 }
 
@@ -41,6 +40,13 @@ function dosDigitos( numero )
         numero = '0'+ numero;
     }
     return numero;
+}
+function blinker( numero )
+{
+    if( numero % 2 == 0 ){
+        return ':';
+    }
+    return '';
 }
 
 //llamamos a la función reloj
