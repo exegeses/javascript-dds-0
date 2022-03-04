@@ -59,3 +59,20 @@ body{
     #sol img{
         width: 250px;
     }
+    #dado img{
+        width: 100px;
+    }
+
+    .btn{
+        padding: 10px 24px;
+        background-color: #fff;
+        margin: 25px 0px;
+        border: 1px solid #9f9f9f;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 500ms;
+    }
+    .btn:hover{
+        background-color: #c0e773;
+        color: #444;
+    }
