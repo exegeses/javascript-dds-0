@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1>Probando SweetAlert</h1>
+
+
+    <script>
+        /*Swal.fire(
+                'Advertencia',
+                'Debe loguearse para acceder al sitio',
+                'warning'
+        );*/
+        Swal.fire(
+            {
+                title: 'Advertencia',
+                html: '<img src="fotos/killq.png" style="width: 210px"> <br>  Si ingresa a este sitio, <b> debe loguearse </b>',
+                icon: 'warning'
+            }
+        );
+    </script>
+
+</body>
+</html>
