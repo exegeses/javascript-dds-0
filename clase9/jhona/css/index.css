@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,800;1,200;1,500;1,800&display=swap');
+
+header{
+   display: flex;
+    background-color:var(--negro);/*para usar la variable se pone var(y el nombre de la variable)*/
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    
+}
+/*los links tienen 4 estados:
+link:link en reposo*/
+/*link visitado: segunda seudo clase y tiene que ver con el link una vez lo viciramos*/
+a nav li:link, a.nav:visited{
+    color: var(--blanco);
+}
+
+/*estado hover:es cuando pasamos por arriba con el mouse*/
+a.nav:hover{
+    color: var(--overlay);
+    font-weight: bold;
+    cursor: pointer;
+}
+/*active: controla el estado cuando activamos el link*/
+a.nav:active{
+    display: block;
+    background-color: var(--overlay);
+}
+/*Los elementos de bloque agregan saltos de linea antes y despues ocupa todo el ancho del contenedor
+list-style=altera las formas de las listas*/
+
+header nav{
+    display: flex;
+    min-height:120px; 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 1360px;/*todas mis secciones tienen que tener el mismo ancho*/
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    /*convierte los elementos de bloque en elementos de linea*/
+    
+    padding: 0.5em;/*rem y em son unidades relativas y se adapta con el fontsize*/ 
+}
+header img{
+    max-width: 250px;
+}
+header input{
+    border-radius: 400px;
+}
+body{
+    background-color: var(--fondo);
+    margin: 0;
+    padding: 0;
+    
+
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    box-sizing: none;
+    text-decoration: none;
+    
+}
+:root{/*variables*/
+    --negro: #07020D;
+    --blanco: #FFFFFF;
+    --fondo: #F1E9DB;
+    --overlay: #5DB7DE;
+    --marron1: #A39B8B;
+    --marron2: #716A5C;
+
+}
+.boton{
+    background-color: #5DB7DE;
+    border-radius: 50%;
+}
+.boton img{
+    width: 20px;
+    height: 20px;
+
+}
+
+
+.clase{
+
+    width: 700px;
+    text-align: center;
+    
+}
+
+div img{
+    width: 150px;
+}
+#container h2{
+font-size: 15px;
+}
+#novedades{
+    text-align: center;
+}
+#bienvenida{
+    background-image: url(../img/bienvenida.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+min-height: 100vh;
+display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#bienvenida h1{
+    color: var(--overlay);
+    font-size: 6vmin;
+    text-align: center;
+  background-color: #35333171 ; 
+  width: 100%;
+  padding: 45px 0;  
+  margin: 0; 
+}
+.contenedornovedades{
+    display: flex;
+    flex-wrap: wrap;
+    /*funciona cuando tenemos varias linias de contenido*/
+   
+   align-items: center;
+}
+a.ar:link, a.ar:visited{
+    color: #02060d;
+border-radius: 200px;
+    border: #177dd1 solid 2px;
+    background-color:var(--blanco);
+    padding: 10px;
+    margin: 0;
+}
+a.ar:hover, a.ar:active{
+    text-decoration:underline;
+    
+}
+
+article img{
+    max-width:100% ;
+}
+article{
+    
+    width: 300px;
+    margin: 10px;
+}
+footer{
+    background-color: rgb(134, 126, 126);
+    font-size: 2vmin;
+    width: 100%;
+    max-height: 100%;
+    height: 90px;
+    text-align: center;
+    margin: 20px;
+    padding: 25px;
+}
+#presenta{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#presenta h2{
+    
+    font-size: 3vmin;
+    margin: 0;   
+}
+
+#presenta h1{
+    font-size: 5vmin;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+#presenta nav{
+    max-width: 100%;
+    width: 70px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: #02060d solid 2px;
+}
+#libro img{
+    
+    max-width: 100%;
+    width: 200px;
+}
+#articulo{
+    display: flex;
+}
+#contacto{
+    display: flex;
+    justify-content:baseline;
+    margin: 50px;
+}
+#contacto img{
+    margin: 20px;
+    max-width: 90vh;
+    width: 100%;
+}
+iframe{
+    width: 100%;
+    max-width: 80vw;
+    margin: 80px;
+}
